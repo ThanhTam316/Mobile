@@ -26,7 +26,7 @@
 
 
 3. Vòng đời của 1 app Android, bao gồm các state nào, tìm hiểu về các state đó.
-   - Trạng thái Created (onCreat()): Activity vừa được khởi tạo lần đầu tiên
+  - Trạng thái Created (onCreat()): Activity vừa được khởi tạo lần đầu tiên
      + dùng hàm này để giao diện (setContentView), khởi tạo các biến, kết nối cơ sở dữ liệu hoặc thiết lập ViewModel         ban đầu. Sau bước này, app chuyển sang onStart().
   - Trạng thái Started (onStart()): Activity chuẩn bị xuất hiện trên màn hình, người dùng đã có thể nhìn thấy nó           nhưng chưa thể tương tác
       + Chuẩn bị các tài nguyên hiển thị lên màn hình.

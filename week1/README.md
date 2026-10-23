@@ -1,9 +1,9 @@
 1. Tìm hiểu về các components của Android, bao gồm những gì, tác dụng là gì? hãy code example để đưa ra dẫn chứng.
    Gồm 4 thành phần cốt lõi:
-   - Activity: Đại diện cho một màn hình duy nhất có giao diện người dùng (UI) tương tác với người dùng. (Ví dụ: Màn hình đăng nhập, màn hình danh sách sản phẩm).
-   - Service: Chạy ngầm để thực hiện các tác vụ dài hạn mà không cần giao diện người dùng (Ví dụ: Phát nhạc ngầm, tải file lớn từ server, đồng bộ dữ liệu)
-   - Broadcast Receiver: Cho phép ứng dụng nhận các thông báo (broadcasts) từ hệ thống hoặc từ các ứng dụng khác (Ví dụ: Thông báo pin yếu, kết nối mạng thay đổi, khởi động xong máy).
-   - Content Provider: Quản lý và chia sẻ tập dữ liệu của ứng dụng một cách bảo mật với các ứng dụng khác (Ví dụ: Truy cập danh bạ, thư viện ảnh của thiết bị).
+- Activity: Đại diện cho một màn hình duy nhất có giao diện người dùng (UI) tương tác với người dùng. (Ví dụ: Màn hình đăng nhập, màn hình danh sách sản phẩm).
+- Service: Chạy ngầm để thực hiện các tác vụ dài hạn mà không cần giao diện người dùng (Ví dụ: Phát nhạc ngầm, tải file lớn từ server, đồng bộ dữ liệu)
+- Broadcast Receiver: Cho phép ứng dụng nhận các thông báo (broadcasts) từ hệ thống hoặc từ các ứng dụng khác (Ví dụ: Thông báo pin yếu, kết nối mạng thay đổi, khởi động xong máy).
+- Content Provider: Quản lý và chia sẻ tập dữ liệu của ứng dụng một cách bảo mật với các ứng dụng khác (Ví dụ: Truy cập danh bạ, thư viện ảnh của thiết bị).
 
 // EM KHÔNG BIẾT CODE HUHU 😭😭
      
@@ -40,12 +40,12 @@
     + Dọn dẹp sạch sẽ (hủy các luồng chạy ngầm, đóng kết nối database) để tránh rò rỉ bộ nhớ (Memory Leak)
 
 4. trong kiến trúc của android có các pattern phổ biến nào
-   3 patterns phổ biến:
-   - MVVM (Model - View - ViewModel):
+3 patterns phổ biến:
+- MVVM (Model - View - ViewModel):
      + View hiển thị
      + ViewModel xử lý logic & giữ trạng thái không bị mất khi xoay màn hình
      + Model lấy dữ liệu
-   - MVI (Model - View - Intent): Luồng dữ liệu chạy 1 chiều khép kín (User Intent -> ViewModel -> UI State -> Render View), giúp quản lý trạng thái màn hình minh bạch, cực ít bug
-   - Clean Architecture: Chia code thành các tầng độc lập (Presentation, Domain, Data) để tách sạch logic nghiệp vụ khỏi khung framework của Android.
+- MVI (Model - View - Intent): Luồng dữ liệu chạy 1 chiều khép kín (User Intent -> ViewModel -> UI State -> Render View), giúp quản lý trạng thái màn hình minh bạch, cực ít bug
+- Clean Architecture: Chia code thành các tầng độc lập (Presentation, Domain, Data) để tách sạch logic nghiệp vụ khỏi khung framework của Android.
 
     

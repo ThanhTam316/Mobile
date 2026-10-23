@@ -38,4 +38,14 @@
     + Giải phóng các tài nguyên không cần thiết khi app đang ẩn (như ngắt kết nối mạng hoặc dừng cập nhật giao diện           ngầm).
   - Trạng thái Destroyed: Đây là trạng thái cuối cùng trước khi Activity bị hủy hoàn toàn khỏi bộ nhớ RAM
     + Dọn dẹp sạch sẽ (hủy các luồng chạy ngầm, đóng kết nối database) để tránh rò rỉ bộ nhớ (Memory Leak)
+
+4. trong kiến trúc của android có các pattern phổ biến nào
+   3 patterns phổ biến:
+   - MVVM (Model - View - ViewModel):
+     + View hiển thị
+     + ViewModel xử lý logic & giữ trạng thái không bị mất khi xoay màn hình
+     + Model lấy dữ liệu
+   - MVI (Model - View - Intent): Luồng dữ liệu chạy 1 chiều khép kín (User Intent -> ViewModel -> UI State -> Render View), giúp quản lý trạng thái màn hình minh bạch, cực ít bug
+   - Clean Architecture: Chia code thành các tầng độc lập (Presentation, Domain, Data) để tách sạch logic nghiệp vụ khỏi khung framework của Android.
+
     

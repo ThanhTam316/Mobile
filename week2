@@ -1,1 +1,9 @@
-
+- Khái niệm: Bất kỳ ứng dụng Android nào cũng bắt buộc phải có file này ở thư mục gốc. Hệ điều hành Android sẽ đọc file này trước tiên để biết ứng dụng của bạn gồm những gì, cần quyền gì và chạy như thế nào trước khi cho phép ứng dụng hoạt động trên thiết bị.
+- Thành phần chính:
+  + Thông tin tổng quan của ứng dụng: Khai báo tên ứng dụng, biểu tượng (icon) hiển thị ngoài màn hình điện thoại, và giao diện/phong cách chung của app.
+  + Các thành phần cốt lõi (App Components): Giống như một công ty phải có các phòng ban, ứng dụng Android cũng gồm các thành phần chính được khai báo ở đây:
+      + Màn hình giao diện (Activity): Các màn hình mà người dùng nhìn thấy và tương tác (ví dụ: màn hình đăng nhập, màn hình trang chủ).
+      + Dịch vụ ngầm (Service): Các tác vụ chạy ẩn không cần giao diện (ví dụ: phát nhạc nền, tải file).
+      + Bộ thu phát sự kiện (Broadcast Receiver): Giúp ứng dụng lắng nghe các tín hiệu từ hệ thống (ví dụ: thông báo khi điện thoại bị mất kết nối Internet hoặc pin yếu).
+- Quyền hạn truy cập: Ứng dụng cần khai báo rõ trước với hệ thống nếu muốn sử dụng các tài nguyên nhạy cảm của người dùng hoặc phần cứng, ví dụ như quyền truy cập Internet, quyền chụp ảnh bằng Camera...
+- Bộ lọc hành động: Giúp hệ thống biết được màn hình nào sẽ là màn hình mở đầu tiên (màn hình chính) khi người dùng bấm vào biểu tượng ứng dụng ngoài màn hình điện thoại.
